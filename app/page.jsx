@@ -1,8 +1,50 @@
+'use client'
 import '../styles/home.css'
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
+  const logoRef = useRef(null);
+
+  useEffect(()=>{
+    if(logoRef.current){
+      gsap.fromTo(logoRef.current,{
+        opacity:0,
+        y:100,
+      },
+      {
+        opacity:1,
+        y:0,
+        duration:2,
+        ease:"bouncy",
+      });
+
+      gsap.fromTo(logoRef.current,{
+        scale:1,
+        opacity:1,
+      },
+      {
+        scale:0,
+        opacity:0,
+        stagger:0.5,
+        scrollTrigger:{
+          trigger:logoRef.current,
+          start:"top 15%",
+          end:"top 0%",
+          ease:"bouncy",
+          scrub:3,
+        }
+      });
+
+    }
+  },[]);
   return (
     <div className="home-page">
+      <section className="head-logo" ref={logoRef}>
+        <p>Epic Zone</p>
+      </section>
       {/* HERO */}
       <section className="hero">
         <h1>Helping Local Businesses Get Discovered</h1>
