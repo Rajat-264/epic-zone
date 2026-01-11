@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+.navbar {
+  background: #000;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* Full width bar, inner spacing */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding-left: 4rem;
+}
+
+/* Logo */
+.logo {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  height: 100%;
+  flex-wrap: nowrap;
+}
+
+/* Individual nav item */
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-inline: clamp(1rem, 4vw, 4rem);
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  transition: filter 0.2s ease;
+  white-space: nowrap;
+}
+
+
+/* Individual colors */
+.nav-item.home {
+  background-color: #009d9d;
+}
+
+.nav-item.business {
+  background-color: #850b81;
+}
+
+.nav-item.blogs {
+  background-color: #5f3dc4;
+}
+
+.nav-item.shivaji {
+  background-color: #e8590c;
+}
+
+.nav-item.pov {
+  background-color: #d8d50e;
+}
+
+.nav-item.contact {
+  background-color: #087f5b;
+}
+
+/* Hover effect (universal) */
+.nav-item:hover {
+  filter: brightness(0.8);
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 2rem;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  display: block;
+}
+
+/* Desktop */
+.nav-links {
+  display: flex;
+  height: 100%;
+}
+
+/* Mobile */
+@media (max-width: 1200px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    flex-direction: column;
+    display: none;
+    border-top: 1px solid #222;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-item {
+    background: #090909 !important;
+    height: 56px;
+    justify-content: center;
+    border-bottom: 1px solid #252525;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item.home {
+    border-left: 15px solid #009d9d;
+  }
+
+  .nav-item.business {
+    border-left: 15px solid #8e24aa;
+  }
+
+  .nav-item.blogs {
+    border-left: 15px solid #5e35b1;
+  }
+
+  .nav-item.shivaji {
+    border-left: 15px solid #ef6c00;
+  }
+
+  .nav-item.pov {
+    border-left: 15px solid #c0ca33;
+  }
+
+  .nav-item.contact {
+    border-left: 15px solid #00796b;
+  }
+}
+
