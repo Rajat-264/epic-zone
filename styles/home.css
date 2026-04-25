@@ -22,13 +22,17 @@
   color: #000000;
 }
 
-.hero button {
+.hero-link {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  border: none;
+  font-weight: 600;
+  border-radius: 15px;
   cursor: pointer;
   background: #000;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* ---------- SECTIONS ---------- */
@@ -41,6 +45,29 @@
   margin-bottom: 1.5rem;
 }
 
+.section-with-header {
+  margin-top: 4rem;
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+  color: #bfbfbf;
+  margin-top: 0.35rem;
+}
+
+.section-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* ---------- BUSINESS CARDS ---------- */
 .business-grid {
   display: grid;
@@ -51,8 +78,8 @@
 .business-card {
   border: 1px solid #e0e0e0;
   padding: 1.2rem;
-  border-radius: 6px;
-  background: #fff;
+  border-radius: 15px;
+  background: #ffffff;
 }
 
 .business-card h3 {
@@ -60,8 +87,9 @@
 }
 
 .business-card p {
-  color: #555;
+  color: #000000;
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
 /* ---------- SECONDARY CONTENT ---------- */
@@ -72,9 +100,79 @@
 }
 
 .secondary-card {
+  display: block;
   padding: 1.5rem;
   border: 1px solid #e0e0e0;
-  background: #fafafa;
+  background: #ffffff;
+  border-radius: 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.medium-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.medium-preview-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  border: 1px solid #262626;
+  border-radius: 18px;
+  padding: 1.4rem;
+  background: linear-gradient(180deg, #151515 0%, #080808 100%);
+}
+
+.medium-preview-date {
+  color: #9f9f9f;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.medium-preview-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.medium-preview-card p {
+  color: #d2d2d2;
+}
+
+.medium-preview-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.medium-preview-meta span {
+  color: #c8b8ff;
+  font-size: 0.85rem;
+}
+
+.medium-preview-meta a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.medium-topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.medium-topic-chip {
+  border-radius: 999px;
+  border: 1px solid #2e2e2e;
+  padding: 0.45rem 0.85rem;
+  color: #d7d7d7;
+  background: #101010;
 }
 
 /* ---------- CTA ---------- */
@@ -90,25 +188,36 @@
   margin-bottom: 1rem;
 }
 
-.cta button {
+.cta-link {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  border: none;
+  border-radius: 15px;
   cursor: pointer;
   background: #fff;
   color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
   .business-grid,
-  .secondary-grid {
+  .secondary-grid,
+  .medium-preview-grid {
     grid-template-columns: 1fr;
   }
 
   .hero {
     padding-top: 3rem;
+  }
+
+  .section-heading-row,
+  .medium-preview-meta {
+    align-items: start;
+    flex-direction: column;
   }
 }
 

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+
+.business-page {
+  color: #fff;
+}
+
+/* Header */
+.business-header {
+    padding: 3rem 1.5rem;
+    background: #850b81;
+    text-align: center;
+    box-shadow: 0 0 20px 10px rgba(74, 74, 74, 0.5);
+}
+
+.business-header h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 9rem;
+}
+
+.business-header p {
+  color: #ffffff;
+  font-size: 20px;
+      font-family: "Poppins", sans-serif;
+
+}
+
+/* Layout */
+.business-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+/* Feed */
+.business-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Card */
+.business-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.business-card {
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #888888;
+  border-radius: 10px;
+}
+
+.business-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.business-main-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+
+.business-card h2 {
+  margin: 0.5rem 0;
+}
+
+.business-card p {
+  color: #ccc;
+}
+
+.business-category {
+  font-size: 0.75rem;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+/* Sidebar */
+.business-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar-block {
+  background: #000;
+  padding: 1.2rem;
+  border: 1px solid #ffffff;
+}
+
+.sidebar-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-block li {
+  margin: 0.4rem 0;
+  color: #ccc;
+}
+
+.sidebar-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #fff;
+  color: #000;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .business-layout {
+    grid-template-columns: 1fr;
+  }
+}

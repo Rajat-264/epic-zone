@@ -1,0 +1,32 @@
+.business-form {
+  max-width: 520px;
+  margin: 3rem auto;
+  color: #fff;
+}
+
+.business-form h1 {
+  margin-bottom: 1.5rem;
+}
+
+.business-form input,
+.business-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.business-form textarea {
+  min-height: 90px;
+}
+
+.business-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}

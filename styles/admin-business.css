@@ -1,0 +1,85 @@
+.admin-business {
+  padding: 2rem;
+  color: #fff;
+}
+
+.admin-business h1 {
+  margin-bottom: 1.5rem;
+}
+
+.empty {
+  color: #bbb;
+}
+
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.admin-card {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 1.5rem;
+  background: #0b0b0b;
+  border: 1px solid #222;
+  padding: 1rem;
+}
+
+.admin-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.admin-info h3 {
+  margin-bottom: 0.4rem;
+}
+
+.admin-info p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.admin-info .desc {
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+
+.admin-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.admin-actions button {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.admin-actions .approve {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.admin-actions .reject {
+  background: #c62828;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .admin-card {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
