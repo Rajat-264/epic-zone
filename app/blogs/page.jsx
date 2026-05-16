@@ -29,10 +29,10 @@ export default async function BlogsPage() {
     <section className="blogs-page">
       <div className="blogs-header">
         <p className="blogs-eyebrow">Medium Stories</p>
-        <h1>Top 30 Medium stories, fetched automatically</h1>
+        <h1>Stories, Perspectives & Powerful Ideas</h1>
         <p className="blogs-intro">
-          The page stays current by reading directly from the Medium profile RSS
-          feed. Posts are grouped by Medium topics when that metadata exists.
+          A curated stream of powerful stories, perspectives, and deep dives —
+          automatically synced from Medium in real time.
         </p>
         <div className="blogs-stats">
           <span>{posts.length} posts</span>
