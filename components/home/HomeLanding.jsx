@@ -56,20 +56,19 @@ export default function HomeLanding({ mediumPreview = [], mediumProfileUrl, topi
   return (
     <div className="home-page">
       <section className="head-logo" ref={logoRef}>
-        <p>Epic Zone</p>
+        <p>The Bharat Brief</p>
       </section>
 
       <section className="hero">
-        <h1>Helping Local Businesses Get Discovered</h1>
+        <h1>Empowering India's MSME Economy</h1>
         <p>
-          Epic Zone connects people with trusted local businesses,
-          while also offering blogs, perspectives, and historical content.
+          Stay ahead with trusted news and smart business strategies.
         </p>
         <Link href="/business" className="hero-link">Explore Businesses</Link>
       </section>
 
       <section className="section">
-        <h2>Featured Local Businesses</h2>
+        <h2>Featured News</h2>
 
         <div className="business-grid">
           <div className="business-card">

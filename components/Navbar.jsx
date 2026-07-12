@@ -11,7 +11,10 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-content">
-        <h1 className="logo">Epic Zone</h1>
+        <div className="logo">
+          <img src="/logo.png" alt="Logo" className="logo-image" />
+          <h1 className="logo-content">The Bharat Brief</h1>
+        </div>
 
         {/* Hamburger */}
         <button
@@ -26,21 +29,12 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <div className={`nav-links ${open ? 'open' : ''}`}>
-          <Link href="/" className="nav-item home" onClick={() => setOpen(false)}>Home</Link>
-          <Link href="/business" className="nav-item business" onClick={() => setOpen(false)}>Business</Link>
-          <Link href="/blogs" className="nav-item blogs" onClick={() => setOpen(false)}>Blogs</Link>
-          <Link href="/shivajimaharaj" className="nav-item shivaji" onClick={() => setOpen(false)}>Shivaji Maharaj</Link>
-          <Link href="/pov" className="nav-item pov" onClick={() => setOpen(false)}>POV</Link>
-          <div className="nav-item search">
-            <input
-                type="text"
-                placeholder="Search"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-            />
-          </div>
-
-          <Link href="/contact" className="nav-item contact" onClick={() => setOpen(false)}>Contact Us</Link>
+          <Link href="/news" className="nav-item news" onClick={() => setOpen(false)}>News</Link>
+          <Link href="/policy" className="nav-item policy" onClick={() => setOpen(false)}>Policy</Link>
+          <Link href="/finance" className="nav-item finance" onClick={() => setOpen(false)}>Finance</Link>
+          <Link href="/founders" className="nav-item founders" onClick={() => setOpen(false)}>Founders</Link>
+          <Link href="/schemes" className="nav-item schemes" onClick={() => setOpen(false)}>Schemes</Link>
+          <Link href="/opportunities" className="nav-item opportunities" onClick={() => setOpen(false)}>Opportunities</Link>
         </div>
       </div>
     </nav>
