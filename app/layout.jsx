@@ -1,5 +1,5 @@
 import './globals.css'
-import Navbar from '../components/Navbar'
+import NavbarClient from '../components/NavbarClient'
 import Footer from '../components/Footer'
 
 export const metadata = {
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <NavbarClient />
         <main className="container" style={{ minHeight: '80vh' }}>
           {children}
         </main>

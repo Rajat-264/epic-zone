@@ -64,7 +64,6 @@ export default function HomeLanding({ mediumPreview = [], mediumProfileUrl, topi
         <p>
           Stay ahead with trusted news and smart business strategies.
         </p>
-        <Link href="/business" className="hero-link">Explore Businesses</Link>
       </section>
 
       <section className="section">

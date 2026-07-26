@@ -3,23 +3,25 @@
 .hero {
   padding: 4rem 1rem 3rem;
   text-align: center;
-  background-image: url('/business2.jfif');
-    background-size: cover;
-    background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('/business2.jfif');
+  background-size: cover;
+  background-position: center;
   font-family: "Poppins", sans-serif;
   border-radius: 80px;
+  color: #ffffff;
 }
 
 .hero h1 {
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .hero p {
   max-width: 720px;
   margin: 0 auto 2rem;
   font-size: 1.1rem;
-  color: #000000;
+  color: #f0f0f0;
 }
 
 .hero-link {
@@ -58,12 +60,12 @@
 }
 
 .section-subtitle {
-  color: #bfbfbf;
+  color: #4f4f4f;
   margin-top: 0.35rem;
 }
 
 .section-link {
-  color: #ffffff;
+  color: #111;
   text-decoration: none;
   font-weight: 600;
 }
@@ -137,7 +139,7 @@
 }
 
 .medium-preview-card p {
-  color: #d2d2d2;
+  color: #333;
 }
 
 .medium-preview-meta {
@@ -155,7 +157,7 @@
 }
 
 .medium-preview-meta a {
-  color: #ffffff;
+  color: #111;
   text-decoration: none;
   font-weight: 600;
 }
@@ -171,7 +173,7 @@
   border-radius: 999px;
   border: 1px solid #2e2e2e;
   padding: 0.45rem 0.85rem;
-  color: #d7d7d7;
+  color: #f1f1f1;
   background: #2C2929;
 }
 

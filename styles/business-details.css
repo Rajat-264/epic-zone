@@ -1,7 +1,7 @@
 .business-details {
   max-width: 1000px;
   margin: 2rem auto;
-  color: #fff;
+  color: #111;
   padding: 0 1rem;
 }
 
@@ -20,19 +20,19 @@
 .details-category {
   display: inline-block;
   margin: 0.5rem 0 1.5rem;
-  color: #aaa;
+  color: #666;
   text-transform: uppercase;
 }
 
 .details-description {
   font-size: 1.05rem;
-  color: #ccc;
+  color: #333;
   max-width: 720px;
 }
 
 .details-meta {
   margin-top: 1.5rem;
-  color: #bbb;
+  color: #444;
 }
 
 .details-products {

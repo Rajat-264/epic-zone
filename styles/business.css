@@ -2,7 +2,7 @@
 
 
 .business-page {
-  color: #fff;
+  color: #111;
 }
 
 /* Header */
@@ -16,6 +16,7 @@
 .business-header h1 {
     font-family: "Poppins", sans-serif;
     font-size: 9rem;
+    color: #ffffff;
 }
 
 .business-header p {
@@ -72,12 +73,12 @@
 }
 
 .business-card p {
-  color: #ccc;
+  color: #444;
 }
 
 .business-category {
   font-size: 0.75rem;
-  color: #aaa;
+  color: #666;
   text-transform: uppercase;
 }
 
@@ -89,9 +90,10 @@
 }
 
 .sidebar-block {
-  background: #000;
+  background: #f7f7f7;
+  color: #111;
   padding: 1.2rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #ddd;
 }
 
 .sidebar-block ul {
@@ -101,7 +103,7 @@
 
 .sidebar-block li {
   margin: 0.4rem 0;
-  color: #ccc;
+  color: #333;
 }
 
 .sidebar-btn {
